@@ -5,5 +5,5 @@
 int maxsubarray(std::vector<int>&nums){
     int max_sum=nums[0];
     int current sum=nums[0];
-    for(size_t i=1;i<nums.)
+    for(size_t i=1;i<nums.size();i)
 }
