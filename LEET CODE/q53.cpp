@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+// For parsing a single input line of integers.
+#include <sstream>
 
 int maxSubarray(const std::vector<int>& nums) {
     int max_sum = nums[0];
@@ -15,9 +17,15 @@ int maxSubarray(const std::vector<int>& nums) {
 }
 
 int main() {
+    std::string line;
+    if (!std::getline(std::cin, line) || line.empty()) {
+        return 0;
+    }
+
     std::vector<int> nums;
+    std::istringstream iss(line);
     int value;
-    while (std::cin >> value) {
+    while (iss >> value) {
         nums.push_back(value);
     }
 
