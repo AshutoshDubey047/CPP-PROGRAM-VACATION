@@ -15,14 +15,14 @@ int maxSubarray(const std::vector<int>& nums) {
 }
 
 int main() {
-    int n;
-    if (!(std::cin >> n) || n <= 0) {
-        return 0;
+    std::vector<int> nums;
+    int value;
+    while (std::cin >> value) {
+        nums.push_back(value);
     }
 
-    std::vector<int> nums(n);
-    for (int i = 0; i < n; ++i) {
-        std::cin >> nums[i];
+    if (nums.empty()) {
+        return 0;
     }
 
     std::cout << maxSubarray(nums) << std::endl;
