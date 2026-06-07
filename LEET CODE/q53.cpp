@@ -2,4 +2,6 @@
 
 #include<vector>
 #include<algorithm>
-int maxsubarray(std::vector<int>&nums)
+int maxsubarray(std::vector<int>&nums){
+    int max
+}
