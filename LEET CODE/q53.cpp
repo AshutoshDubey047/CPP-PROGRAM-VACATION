@@ -3,5 +3,5 @@
 #include<vector>
 #include<algorithm>
 int maxsubarray(std::vector<int>&nums){
-    int max
+    int max_sum=n
 }
