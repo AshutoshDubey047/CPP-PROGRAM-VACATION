@@ -1,1 +1,1 @@
-//Given an integ
+//Given an integer
