@@ -9,4 +9,5 @@ int maxsubarray(std::vector<int>&nums){
         current_sum=std::max(nums[i],current_sum+nums[i]);
         max_sum=std::max(max_sum,current_sum);
     }
+    return max_sum; 
 }
