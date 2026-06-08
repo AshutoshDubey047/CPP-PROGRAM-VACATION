@@ -4,5 +4,6 @@ int main(){
     int nums[] = {5,15,22,1,-15,-24};
     int size=6;
     int largest=6;
-    int largest
+    int largest=INT_MIN;
+    for()
 }
