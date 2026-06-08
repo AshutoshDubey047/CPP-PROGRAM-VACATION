@@ -6,7 +6,7 @@ int main(){
     int largest=0;
     largest=INT_MIN;
     int smallest=INT_MAX;
-    smallest=0
+    smallest=0;
     for(int i=0;i<size;i++){
         largest=max(largest,nums[i]);   
     }   cout<<"largest element is "<<largest<<endl;
