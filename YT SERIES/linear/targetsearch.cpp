@@ -10,4 +10,5 @@ int main(){
             return 0;
         }
     }   cout<<"target not found in the array"<<endl;
+    return 0;       
 }
