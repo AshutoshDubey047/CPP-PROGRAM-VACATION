@@ -1,2 +1,5 @@
 #include<iostream>
-using 
+using namespace std;
+int main(){
+    int arr[]
+}
