@@ -11,5 +11,6 @@ int main(){
         largest=max(largest,nums[i]);   
         smallest=min(smallest,nums[i]);
     }   cout<<"largest element is "<<largest<<endl;
+    cout<<"smallest element is "<<smallest<<endl;
     return 0;
 }   
