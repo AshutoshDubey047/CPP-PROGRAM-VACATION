@@ -5,5 +5,6 @@ int main(){
     int size=6;
     int largest=6;
     int largest=INT_MIN;
-    for()
+    for(int i=0;i<size;i++){
+        if
 }
