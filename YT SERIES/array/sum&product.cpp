@@ -9,4 +9,7 @@ int main(){
         sum+=nums[i];
         product*=nums[i];
     }   cout<<"sum of the array is "<<sum<<endl;
-    cout<<"product of the array is "<<product<<endl;}
+    cout<<"product of the array is "<<product<<endl;
+    return 0;
+    
+}
