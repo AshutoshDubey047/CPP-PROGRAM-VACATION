@@ -2,13 +2,12 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build C++ (Force Compile)",
+      "label": "Clean & Build C++",
       "type": "shell",
-      "command": "g++",
+      "command": "cmd",
       "args": [
-        "-o",
-        "${workspaceFolder}\\YT SERIES\\array\\output\\sum&product.exe",
-        "${file}"
+        "/c",
+        "del /F /Q \"${workspaceFolder}\\YT SERIES\\array\\output\\*.exe\" 2>nul & g++ -o \"${workspaceFolder}\\YT SERIES\\array\\output\\sum&product.exe\" \"${file}\""
       ],
       "group": {
         "kind": "build",
