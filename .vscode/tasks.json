@@ -2,17 +2,70 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Clean & Build C++",
+      "label": "Build & Run C++",
       "type": "shell",
       "command": "cmd",
       "args": [
         "/c",
-        "del /F /Q \"${workspaceFolder}\\YT SERIES\\array\\output\\*.exe\" 2>nul & g++ -o \"${workspaceFolder}\\YT SERIES\\array\\output\\sum&product.exe\" \"${file}\""
+        "cd \"${fileDirname}\" && g++ -Wall -o \"${fileDirname}/output/${fileBasenameNoExtension}.exe\" \"${file}\" && \"${fileDirname}/output/${fileBasenameNoExtension}.exe\""
       ],
       "group": {
         "kind": "build",
         "isDefault": true
       },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": {
+        "owner": "cpp",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "message": 5
+        }
+      }
+    },
+    {
+      "label": "Build C++ Only",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "cd \"${fileDirname}\" && g++ -Wall -o \"${fileDirname}/output/${fileBasenameNoExtension}.exe\" \"${file}\""
+      ],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false
+      },
+      "problemMatcher": {
+        "owner": "cpp",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "message": 5
+        }
+      }
+    },
+    {
+      "label": "Run C++ Program",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "\"${fileDirname}/output/${fileBasenameNoExtension}.exe\""
+      ],
       "presentation": {
         "echo": true,
         "reveal": "always",
