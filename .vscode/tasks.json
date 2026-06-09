@@ -7,7 +7,7 @@
       "command": "cmd",
       "args": [
         "/c",
-        "cd \"${fileDirname}\" && g++ -Wall -o \"${fileDirname}/output/${fileBasenameNoExtension}.exe\" \"${file}\" && \"${fileDirname}/output/${fileBasenameNoExtension}.exe\""
+        "cd \"${fileDirname}\" && g++ -Wall -o \"${fileDirname}/output/${fileBasenameNoExtension}.exe\" \"${file}\" && echo. && \"${fileDirname}/output/${fileBasenameNoExtension}.exe\""
       ],
       "group": {
         "kind": "build",
@@ -16,8 +16,9 @@
       "presentation": {
         "echo": true,
         "reveal": "always",
-        "focus": false,
-        "panel": "shared"
+        "focus": true,
+        "panel": "shared",
+        "clear": false
       },
       "problemMatcher": {
         "owner": "cpp",
@@ -43,7 +44,8 @@
       "presentation": {
         "echo": true,
         "reveal": "always",
-        "focus": false
+        "focus": true,
+        "panel": "shared"
       },
       "problemMatcher": {
         "owner": "cpp",
@@ -69,7 +71,8 @@
       "presentation": {
         "echo": true,
         "reveal": "always",
-        "focus": false
+        "focus": true,
+        "panel": "shared"
       }
     }
   ]
