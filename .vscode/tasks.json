@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build C++ (Force Compile)",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-o",
+        "${workspaceFolder}\\YT SERIES\\array\\output\\sum&product.exe",
+        "${file}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false
+      }
+    }
+  ]
+}
