@@ -57,5 +57,9 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "C_Cpp_Runner.makefileDebuggingType": "gdb",
-  "C_Cpp_Runner.alwaysOpenRunnerTerminalInGDB": false
+  "C_Cpp_Runner.alwaysOpenRunnerTerminalInGDB": false,
+  "C_Cpp_Runner.executorUseShellExecute": false,
+  "C_Cpp_Runner.ignoreWarnings": true,
+  "terminal.integrated.automationShell.windows": "cmd.exe",
+  "terminal.integrated.shell.windows": "cmd.exe"
 }
