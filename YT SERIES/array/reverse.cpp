@@ -17,6 +17,9 @@ int main(){
     int size=5;
     reverse(arr,size);
     cout<<"reversed array is: ";
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
     return 0;
 }
 }
