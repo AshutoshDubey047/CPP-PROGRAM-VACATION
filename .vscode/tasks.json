@@ -7,73 +7,26 @@
       "command": "cmd",
       "args": [
         "/c",
-        "cd \"${fileDirname}\" && g++ -Wall -o \"${fileDirname}/output/${fileBasenameNoExtension}.exe\" \"${file}\" && echo. && \"${fileDirname}/output/${fileBasenameNoExtension}.exe\""
+        "cd \"${fileDirname}\" && g++ -Wall -o \"${fileDirname}/output/${fileBasenameNoExtension}.exe\" \"${file}\" && echo. && echo ===== OUTPUT ===== && \"${fileDirname}/output/${fileBasenameNoExtension}.exe\""
       ],
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "presentation": {
-        "echo": true,
         "reveal": "always",
-        "focus": true,
         "panel": "shared",
+        "focus": true,
+        "echo": true,
+        "showReuseMessage": false,
         "clear": false
       },
-      "problemMatcher": {
-        "owner": "cpp",
-        "fileLocation": ["relative", "${workspaceFolder}"],
-        "pattern": {
-          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-          "file": 1,
-          "line": 2,
-          "column": 3,
-          "severity": 4,
-          "message": 5
-        }
-      }
-    },
-    {
-      "label": "Build C++ Only",
-      "type": "shell",
-      "command": "cmd",
-      "args": [
-        "/c",
-        "cd \"${fileDirname}\" && g++ -Wall -o \"${fileDirname}/output/${fileBasenameNoExtension}.exe\" \"${file}\""
-      ],
-      "presentation": {
-        "echo": true,
-        "reveal": "always",
-        "focus": true,
-        "panel": "shared"
+      "runOptions": {
+        "runOn": "folderOpen"
       },
-      "problemMatcher": {
-        "owner": "cpp",
-        "fileLocation": ["relative", "${workspaceFolder}"],
-        "pattern": {
-          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-          "file": 1,
-          "line": 2,
-          "column": 3,
-          "severity": 4,
-          "message": 5
-        }
-      }
-    },
-    {
-      "label": "Run C++ Program",
-      "type": "shell",
-      "command": "cmd",
-      "args": [
-        "/c",
-        "\"${fileDirname}/output/${fileBasenameNoExtension}.exe\""
-      ],
-      "presentation": {
-        "echo": true,
-        "reveal": "always",
-        "focus": true,
-        "panel": "shared"
-      }
+      "isBackground": false,
+      "problemMatcher": []
     }
   ]
 }
+
