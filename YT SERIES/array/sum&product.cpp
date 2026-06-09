@@ -8,7 +8,8 @@ int main(){
     for(int i=0;i<size;i++){
         sum+=nums[i];
         product*=nums[i];
-    }   cout<<"sum of the array is "<<sum<<endl;
+    }
+    cout<<"sum of the array is "<<sum<<endl;
     cout<<"product of the array is "<<product<<endl;
     return 0;
     
