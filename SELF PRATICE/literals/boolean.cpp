@@ -1,5 +1,5 @@
 #include<iostream>
 using namespace std;
 int main(){
-    bool isCodingFun = true;
+    bool isTrue = true;
     bool isFishTasty = false;
