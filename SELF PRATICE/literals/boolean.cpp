@@ -3,7 +3,7 @@ using namespace std;
 int main(){
 
     int RED=1;
-    int BLUE;
+    int BLUE=0;
      bool  isred=BLUE;
 
     bool  isblue=RED;
