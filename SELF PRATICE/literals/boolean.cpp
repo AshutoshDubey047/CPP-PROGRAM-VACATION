@@ -2,8 +2,8 @@
 using namespace std;
 int main(){
 
-    int RED=1;
-    int BLUE=0;
+    int RED;
+    int BLUE;
      bool  isred=RED;
 
     bool  isblue=BLUE;
