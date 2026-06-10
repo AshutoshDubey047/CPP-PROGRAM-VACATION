@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
-    bool isTrue = true;
-    bool isFalse = false;
+    bool isTrue = false;
+    bool isFalse = true;
     if(isTrue){
         cout<<"This is true"<<endl;
     }   else{
