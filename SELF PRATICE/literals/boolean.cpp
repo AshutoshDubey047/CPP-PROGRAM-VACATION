@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
 
-    int RED;
+    int RED=1;
     int BLUE;
      bool  isred=BLUE;
 
