@@ -4,7 +4,7 @@ int main(){
 
     int RED;
     int BLUE;
-     bool  isred=RED;
+     bool  isred=BLUE;
 
     bool  isblue=RED;
    
