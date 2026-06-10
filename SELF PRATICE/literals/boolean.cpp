@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
+
+    int RED=1;
      bool  isred=RED;
 
     bool  isblue=BLUE;
