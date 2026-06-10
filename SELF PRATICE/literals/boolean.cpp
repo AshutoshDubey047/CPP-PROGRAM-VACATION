@@ -6,7 +6,7 @@ int main(){
     int BLUE;
      bool  isred=RED;
 
-    bool  isblue=;
+    bool  isblue=RED;
    
     if(isred){
         cout<<"This is true"<<endl;
