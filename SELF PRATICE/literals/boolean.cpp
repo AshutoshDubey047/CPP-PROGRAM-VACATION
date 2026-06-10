@@ -1,8 +1,9 @@
 #include<iostream>
 using namespace std;
 int main(){
-     bool  isree=RED
-    bool 
+     bool  isred=RED;
+
+    bool  is
    
     if(isTrue){
         cout<<"This is true"<<endl;
