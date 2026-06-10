@@ -3,14 +3,14 @@ using namespace std;
 int main(){
      bool  isred=RED;
 
-    bool  is
+    bool  isblue=BLUE;
    
-    if(isTrue){
+    if(isred){
         cout<<"This is true"<<endl;
     }   else{
         cout<<"This is false"<<endl;
     }       
-        if(isFalse){
+        if(isblue){
             cout<<"This is true"<<endl;
         }   else{
             cout<<"This is false"<<endl;
